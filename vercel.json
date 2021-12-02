@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "functions": {
+    "api/index.js": {
+      "memory": 1024,
+      "maxDuration": 10
+    }
+  },
+  "routes": [{ "src": "/(.*)", "dest": "api/index.js" }],
+  "env": {
+    "MONGO_HOST": "@amedida-mongo-host",
+    "MONGO_PORT": "@amedida-mongo-port",
+    "MONGO_USER": "@amedida-mongo-user",
+    "MONGO_PASS": "@amedida-mongo-password",
+    "MONGO_DB": "@amedida-mongo-db",
+    "AUTH_ADMIN_USERNAME": "@amedida-auth-admin-username",
+    "AUTH_ADMIN_PASSWORD": "@amedida-auth-admin-password",
+    "AUTH_ADMIN_EMAIL": "@amedida-auth-admin-email",
+    "AUTH_JWT_SECRET": "@amedida-auth-jwt-secret"
+  }
+}

@@ -1,0 +1,7 @@
+extends layout
+
+block content
+    .container(style="flex: 1; padding: 50px 0;")
+      h1.title= message
+      h2.title= error.status
+      pre #{error.stack}
